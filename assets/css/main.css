@@ -1,0 +1,90 @@
+:root{ /*declaram variaveis dentro da raiz do elemento*/
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; /*nao rompe a saida da caixa.*/
+}
+/*BASE*/
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+
+}
+
+header  nav  a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*FILME PRINCIPAL*/
+.serie-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.5)100%), url('../img/capa-filme-grey.jpg');
+    height: 637px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;  
+}
+.serie-principal .titulo{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+.serie-principal .descricao{
+    margin-bottom: 40px;
+    width: 45%;
+    font-size: 18px;
+    padding-top: 8px;
+}
+
+.serie-principal .container{
+    margin-left: 30px;
+    width: 85%;
+
+}
+
+.btn{
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    margin-right: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.btn i{
+    margin-right: 8px;
+}
+
