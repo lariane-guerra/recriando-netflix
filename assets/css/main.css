@@ -2,16 +2,20 @@
     --vermelho: #E50914;
     --preta: #141414;
 }
+/*Linkando a fonte:*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
     margin: 0;
     padding: 0; 
     box-sizing: border-box; /*nao rompe a saida da caixa.*/
+    font-family: 'Playfair Display', serif;
 }
 /*BASE*/
 body{
     background: var(--preta);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Playfair Display', serif;
     color: white;
 }
 
@@ -25,14 +29,14 @@ header .container{
 
 header .logo{
     color: var(--vermelho);
-    font-family: 'Arial Black';
+    font-family: 'Playfair Display', serif;
     font-size: 40px;
 
 }
 
-header  nav  a{
+header nav a{
     text-decoration: none;
-    color: #AAA;
+    color: #6d7578;
     margin-right: 10px;
 }
 
@@ -43,8 +47,8 @@ header nav a:hover{
 /*FILME PRINCIPAL*/
 .serie-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.5)100%), url('../img/capa-filme-grey.jpg');
-    height: 637px;
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.5)100%), url('../img/capa-time.jpg');
+    height: 670px;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -52,16 +56,18 @@ header nav a:hover{
     align-items: flex-start;  
 }
 .serie-principal .titulo{
-    font-size: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 68px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
 
 
 }
 .serie-principal .descricao{
     margin-bottom: 40px;
-    width: 45%;
-    font-size: 18px;
+    width: 50%;
+    font-size: 22px;
     padding-top: 8px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .serie-principal .container{
@@ -75,6 +81,7 @@ header nav a:hover{
     background-color: rgba(0,0,0,0.5);
     border: none;
     color: white;
+    font-size: 18px;
     margin-right: 10px;
     padding: 15px;
     cursor: pointer;
@@ -87,4 +94,30 @@ header nav a:hover{
 .btn i{
     margin-right: 8px;
 }
+
+/*ALTURA E LARGURA DAS IMAGENS NO CARROSEL*/
+.box-filme{
+    border-radius: 8px;
+}
+.carrosel-filmes{
+    padding: 20px;
+}
+.sub-titulo{
+    margin-bottom: 15px;
+    margin-left: 50px;
+    color: #495057;
+    font-size: 32px;
+}
+
+.item p{
+    text-align: center;
+    padding: 8px;
+    font-family: 'Roboto', sans-serif;
+    color:#212529;
+}
+#hero{
+    padding-top: 70px;
+    background-color: #e9ecef;
+}
+
 
